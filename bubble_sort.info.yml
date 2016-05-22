@@ -1,0 +1,6 @@
+name: Bubble Sort Module
+description: Runs a bubble sort algorithm
+package: Custom
+
+type: module
+core: 8.x

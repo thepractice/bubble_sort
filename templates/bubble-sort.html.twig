@@ -1,0 +1,43 @@
+<!-- Unserialize the array -->
+{% set numberArrayUnserialized = numberArray|split(',') %}
+
+{% for number in numberArrayUnserialized %}
+	{% if sorting and (n == loop.index0 or n == loop.index0 + 1) %}
+		{% set class = 'container highlight' %}
+	{% else %}
+		{% set class= 'container' %}
+	{% endif %}
+	<div class="{{ class }}">
+		<div class="row" style="width: {{ number }}px;">	
+		</div><span>{{ number }}</span>
+	</div>
+{% endfor %}
+
+
+
+{% if numberArray is same as(sortedArray) %}
+	<style>
+		#edit-step {
+			display: none;
+		}
+	</style>
+{% endif %}
+
+<style>
+	.container {
+		width: 200px;
+		height: 30px;
+		padding-top: 5px;
+	}
+	.row {
+		height: 20px;
+		display: inline-block;
+		background: #0099ff;
+		vertical-align: middle;
+    margin-right: 10px;
+	}
+	.highlight {
+		background: yellow;
+	}
+
+</style>

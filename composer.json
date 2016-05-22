@@ -1,0 +1,6 @@
+{
+	"name" : "drupal/bubble_sort",
+	"description": "Runs a bubble sort algorithm",
+	"type": "drupal-module",
+	"license": "GPL-2.0+"
+}

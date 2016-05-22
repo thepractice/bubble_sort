@@ -1,0 +1,6 @@
+bubble_sort.admin:
+  title: 'Bubble Sort module settings'
+  description: 'Configure the Bubble Sort module'
+  parent: system.admin_config_content
+  route_name: bubble_sort.content
+  weight: 100

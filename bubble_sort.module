@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * The .module file for the Bubble Sort module
+ */
+
+function bubble_sort_theme($existing, $type, $theme, $path) {
+  return array(
+    'bubble_sort' => array(
+      'variables' => array(
+      	'n' => NULL,
+      	'numberArray' => NULL,
+      	'sorting' => NULL,
+      	'sortedArray' => NULL,
+      ),
+    ),
+  );
+}
+
+?>
