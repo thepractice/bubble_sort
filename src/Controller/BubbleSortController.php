@@ -56,6 +56,7 @@ class BubbleSortController extends ControllerBase {
 	public function content() {
 
 		if (!isset($_SESSION['bubble_sort']['numberArray'])) {
+			drupal_set_message('session numberarray was not set');
 			$this->shuffle();
 		}
 
